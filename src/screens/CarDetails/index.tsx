@@ -2,6 +2,7 @@ import React from 'react';
 import { BackButton } from '../../components/BackButton';
 import { ImageSlider } from '../../components/ImageSlider';
 import { Accessory } from '../../components/Accessory';
+import { Button } from '../../components/Button';
 
 import SpeedSvg from '../../assets/speed.svg';
 import AccelerationSvg from '../../assets/acceleration.svg';
@@ -24,6 +25,7 @@ import {
     Price,
     About,
     Accessories,
+    Footer,
 } from './styles';
 
 export function CarDetails() {
@@ -65,6 +67,10 @@ export function CarDetails() {
                     Este é automóvel despotivo. Surgiu do lendário toure de lide indultado na praça Real Maestranza de Sevilla. 
                     É um belíssimo carro para quem gosta de acelerar.
                 </About>
+
+                <Footer>
+                    <Button title="Confirmar" />
+                </Footer>
             </Content>
         </Container>
     );
