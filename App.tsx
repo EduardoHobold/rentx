@@ -18,7 +18,7 @@ import { Home } from './src/screens/Home';
 
 import theme from './src/styles/theme';
 
-import { Scheduling } from './src/screens/Scheduling';
+import { Routes } from './src/routes';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -35,7 +35,7 @@ export default function App() {
 
   return (
     <ThemeProvider theme={theme}>
-      <Scheduling />
+      <Routes />
     </ThemeProvider>
   );
 }
