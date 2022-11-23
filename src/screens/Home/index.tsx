@@ -20,7 +20,7 @@ import { api } from '../../service/api';
 import { CarDTO } from '../../dtos/CarDTO';
 
 import { Car } from '../../components/Car';
-import { Load } from '../../components/Load';
+import { LoadAnimation } from '../../components/LoadAnimation';
 
 import { useTheme } from 'styled-components';
 
@@ -111,7 +111,7 @@ export function Home() {
                 </HeaderContent>
             </Header>
 
-            {loading ? <Load /> :
+            {loading ? <LoadAnimation /> :
                 <CarList
                     data={cars}
                     keyExtractor={item => String(item.id)}
